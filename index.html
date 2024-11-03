@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-xh6IMlOfFb9+nhxScASfmdCe98v3Ef+nqlV0tYV1ZDoAfjSWmDchf5OHC63m2Lef" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
+    <title>Main Page</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">_DS3</a></li>
-                <li><a href="#resume">_historia</a></li>
-                <li><a href="#portfolio">_jefes</a></li>
-                <li><a href="#services">_NPCs</a></li>
-                <li><a href="#contact">_significado</a></li>
+                <li><a href="#intro">_DS3</a></li>
+                <li><a href="#historia">_historia</a></li>
+                <li><a href="#bosses">_jefes</a></li>
+                <li><a href="#NPCs">_NPCs</a></li>
+                <li><a href="#significance-me">_significado</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro">
-        <h1>// Dark Souls 3 </h1>
+    <section class="intro" id="intro">
+        <h1> Dark Souls 3</h1>
         <p>GOTY</p>
     </section>
     <section class="welcome">
-        <p>// Welcome Home, ashen one.</p>
+        <p> Welcome Home, ashen one.</p>
         <div class="ascii-face">
             <pre>{" " "}</pre>
         </div>
@@ -32,24 +33,119 @@
             <span>&#x21E3;</span>
         </div>
     </section>
-    <section class="image-section"></section>
+    <div class="image-section"></div>
 
-    <section id="about" class="about-me">
-        <div class="about-header">
-            <h2>&lt;about_me&gt;</h2>
-            <p>...lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+    <section id="historia" class="historia">
+        <div class="historia-header">
+            <h2>&lt;Historia&gt;</h2>
+            <p>La historia de Dark Souls 3 gira en torno a un mundo moribundo donde el ciclo de fuego y oscuridad está por romperse. En este mundo, la "Primera Llama" — que representa el poder de la vida, la luz y el orden— se está extinguiendo, lo que llevaría a una era de oscuridad y caos. Para evitarlo, los "Señores de la Ceniza", poderosos seres que alguna vez sacrificaron sus almas para avivar la llama, deben volver a sus tronos y reavivar el fuego una vez más.</p>
         </div>
-        <div class="about-content">
+        <div class="historia-content">
             <div class="left">
-                <p><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos architecto unde velit nobis optio laudantium quo, sed, dolorem inventore facilis expedita. Provident officia architecto necessitatibus dolores porro sapiente iusto modi.</strong></p>
+                <p><strong>El jugador encarna al "Unkindled", un guerrero que, a diferencia de los Señores, no pudo avivar el fuego en su tiempo. Despierta con la misión de cazar a estos Señores de la Ceniza —algunos ahora corrompidos o que han renunciado a su deber— y devolverlos a sus tronos en el Santuario de Enlace de Fuego.</strong></p>
             </div>
             <div class="right">
-                <p>...curabitur sit amet luctus tortor, sit amet ultrices ante. Maecenas convallis dui arcu, et tempor felis consectetur vel...</p>
+                <p>A medida que avanza, el jugador descubre los efectos del ciclo interminable de luz y oscuridad en el mundo y sus habitantes. Al final, debe tomar una decisión crucial: reavivar la llama una vez más o dejar que se apague y permitir que una nueva era comience, dando fin al ciclo que ha atrapado a la humanidad durante tanto tiempo.</p>
             </div>
         </div>
         <div class="read-more">
-            <a href="#"> {read_more} </a>
+            <a href="https://darksouls3.wiki.fextralife.com/Lore" target="_blank">read_more</a>
         </div>
     </section>
+
+    <section id="bosses" class="bosses">
+        <h2>&lt;Jefes&gt;</h2>
+        <p>Los jefes son grandes enemigos que controlan el acceso a otras áreas durante el juego. Algunos jefes son opcionales y otros son obligatorios para poder completar el juego.
+
+            La mayoría de jefes sueltan almas individuales específicas. Estas pueden ser consumidas para obtener una gran cantidad de almas o pueden ser transpuestas con Ludleth de Courland para obtener armas, escudos o anillos únicos.</p>
+        <div class="bosses-items">
+            <div class="bosses-item">
+                <img src="img/abyssWatcher.jpg" alt="Abyss Watcher">
+                <p class="title">Abyss Watchers</p>
+                <p class="description">Los Vigilantes del Abismo fueron el componente principal de la Legión de no muertos de Farron, una fuerza de combate especial formada para combatir la amenaza del Abismo.</p>
+            </div>
+            <div class="bosses-item">
+                <img src="img/yhorm1.jpg" alt="Yhorm">
+                <p class="title">Yhorm The Giant</p>
+                <p class="description">Hace mucho tiempo, el gigante Yhorm, descendiente de un antiguo conquistador, fue llamado a dirigir a su pueblo antaño subyugado, con una espada pesada y un escudo duro como la piedra.</p>
+            </div>
+            <div class="bosses-item">
+                <img src="img/aldrich3.jpg" alt="Aldrich">
+                <p class="title">Aldrich Devourer of Gods</p>
+                <p class="description">Anteriormente un clérigo, Aldrich comenzó a tener visiones sobre la próxima "era del mar profundo", donde los residuos del alma humana caían hasta profundidades inimaginables y se convertían en los componentes centrales del "nuevo mundo"</p>
+            </div>
+        </div>
+        <div class="bosses-items">
+            <div class="bosses-item">
+                <img src="img/lothric.jpg" alt="Lothric">
+                <p class="title">Lothric</p>
+                <p class="description">Lothric y Lorian, junto con Ocelotte, son los hijos del Rey Oceiros y la Reina de Lothric. El mayor, Lorian, era un caballero que logró acabar con el Príncipe demonio, envolviendo su espada con el poder de las llamas. Lothric nació enfermo y débil, y no parece haber tenido algún tipo de entrenamiento en combate.</p>
+            </div>
+            <div class="bosses-item">
+                <img src="img/soulOfCinder.jpg" alt="Soul of Cinder">
+                <p class="title">Soul of Cinder</p>
+                <p class="description">El Alma de Cenizas es una amalgama de los anteriores Señores de la Ceniza incluyendo al No muerto elegido, al Portador de la maldición (si eligieron enlazar la Primera Llama), a Gwyn, el Primer Señor y a otros personajes que enlazaron la Primera Llama. </p>
+            </div>
+            <div class="bosses-item">
+                <img src="img/namelessKing.jpg" alt="Nameless King">
+                <p class="title">Nameless King</p>
+                <p class="description">El Rey Sin Nombre fue antaño un dios de la guerra asesino de dragones en la Era de los Dioses, y heredero del rayo, hasta que lo sacrificó todo para aliarse con los antiguos dragones. Domesticó a un dragón de la tormenta y formó un vínculo estrecho con él, llevándolo a innumerables batallas.</p>
+            </div>
+        </div>
+        <div class="bosses-items">
+            <div class="bosses-item">
+                <img src="img/gael.jpg" alt="Gael, Slave Knight">
+                <p class="title">Slave Knight Gael</p>
+                <p class="description">Gael residía en el Mundo Pintado de Ariandel, donde actuaba como una figura paterna para la Pintora, quien lo llamaba "tío". Se cree que abandonó la pintura tras el encierro de la Pintora, llevándose los restos del portal físico con él, con el objetivo de encontrar a un Ser de la ceniza que complete la profecía en la que se quemaría el actual mundo pintado para que la Pintora pueda reemplazarlo.</p>
+            </div>
+        </div>
+    </section>
+    <section id="NPCs" class="NPCs">
+        <h2>&lt;NPCs&gt;</h2>
+        <p>Los NPCs se refieren a los numerosos habitantes prediseñados que los jugadores conocen a lo largo de su viaje. Estos NPCs suelen proporcionar información valiosa que ayuda a los jugadores a reconstruir la historia del juego. Algunos son encargados de misiones o están relacionados entre sí de diversas maneras, mientras que muchos son comerciantes con los que los jugadores pueden comerciar por equipo, magia y objetos. A continuación se muestra una lista de todos estos personajes, con nombres tomados de los créditos del juego, proporcionados a través del diálogo o, si no había nada más disponible en el momento de la creación, descritos por la comunidad. Cada NPC contribuye de forma única a la experiencia del jugador, ofreciendo ayuda, desafíos o una visión más profunda del mundo del juego.</p>
+        <div class="NPCs-buttons">
+            <button class="NPCs-btn"><a href="https://darksouls3.wiki.fextralife.com/Blacksmith+Andre" target="_blank">Black Smith Andre</a></button>
+            <button class="NPCs-btn"><a href="https://darksouls3.wiki.fextralife.com/Fire+Keeper" target="_blank">Fire Keeper</a></button>
+            <button class="NPCs-btn"><a href="https://darksouls3.wiki.fextralife.com/Ludleth+of+Courland" target="_blank">Ludleth of Courland</a></button>
+            <button class="NPCs-btn"><a href="https://darksouls3.wiki.fextralife.com/Anri+of+Astora" target="_blank">Anri of Astora</a></button>
+        </div>
+    </section>
+
+    <div class="all-NPCs-btn">
+        <a href="https://darksouls3.wiki.fextralife.com/NPCs" target="_blank">read_more</a>
+    </div>
+    
+    <div class="image-section1"></div>
+
+    <div class="significance-me" id="significance-me">
+        <h2>&lt;Significado&gt;</h2>
+        <p>"Dark Souls 3" es una experiencia que va más allá del juego, con profundas implicaciones psicológicas relacionadas con la lucha, la persistencia, y la resiliencia. En el mundo desolador y decadente de este juego, los jugadores enfrentan desafíos extremos y muertes constantes, simbolizando los obstáculos inevitables de la vida. Cada derrota representa la frustración, el fracaso y el sufrimiento, mientras que cada "resurrección" (al regresar al último punto de control) muestra la importancia de la perseverancia frente a la adversidad. Este ciclo de "morir y volver a intentarlo" refuerza un mensaje central: que el progreso personal y el crecimiento se logran a través de la capacidad de seguir adelante, de aprender de los errores y de superar los propios límites, en una búsqueda incesante de propósito en medio de un entorno aparentemente hostil y sin esperanza.</p>
+    </div>
+
+    <div class="bosses-items">
+        <div class="bosses-item">
+            <img src="img/claymore.jpg" alt="Claymore Sword">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+        <nav class="footer-nav">
+            <a href="#intro">DS3</a>
+            <a href="#historia">historia</a>
+            <a href="#bosses">jefes</a>
+            <a href="#NPCs">NPCs</a>
+            <a href="#significance-me">significado</a>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-copy">
+            <p>Copyright © 2024 Web Page Dark Souls 3</p>
+        </div>
+        </div>
+    </footer>  
 </body>
 </html>

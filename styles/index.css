@@ -51,16 +51,16 @@ nav ul li a {
 
 .intro p {
     font-size: 1.5em;
-    color: #ab82ff;
+    color: #8761d3;
 }
 
 .image-section {
     width: 100%;
-    height: 500px;
-    background-image: url('../img/main.jpg');
+    height: 450px;
+    background-image: url('../img/bonfire.jpg');
     background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+    background-position: initial;
+    background-attachment:fixed; 
 }
 
 .welcome p {
@@ -76,7 +76,8 @@ nav ul li a {
 
 .scroll-down {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-size: 2em;
     color: #fff;
 }
@@ -86,40 +87,44 @@ nav ul li a {
     height: auto;
 }
 
-.about-me {
+.historia {
     width: 80%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
 }
 
-.about-header {
-    margin-bottom: 1.5em;
+.historia-header {
+    margin-bottom: 3em;
+    margin-top: 3em;
 }
 
-.about-header h2 {
-    font-size: 2.5em;
-    color: #ab82ff;
+.historia-header h2 {
+    font-size: 3em;
+    color: #8761d3;
 }
 
-.about-header p {
+.historia-header p {
+    text-align: justify;
+    margin-top: 0.5em;
     font-size: 1.2em;
-    color: #ab82ff;
+    color: #e1db7d;
 }
 
-.about-content {
+.historia-content {
     display: flex;
     justify-content: space-between;
     padding: 1em 0;
 }
 
-.about-content .left {
+.historia-content .left {
     width: 45%;
     font-size: 1.5em;
     text-align: left;
+    text-decoration: underline;
 }
 
-.about-content .right {
+.historia-content .right {
     width: 45%;
     font-size: 1.2em;
     color: #e1db7d;
@@ -133,8 +138,254 @@ nav ul li a {
 .read-more a {
     text-decoration: none;
     padding: 1em 2em;
-    background-color: #00bfff;
+    background-color: #41575f;
     color: #000;
     font-size: 1.2em;
     border-radius: 5px;
+    color:white;
+}
+
+.bosses {
+    width: 80%;
+    margin-top: 2.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.bosses h2 {
+    font-size: 3em;
+    color: #8761d3;
+}
+
+.bosses p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #e1db7d;
+    text-align: justify;
+}
+
+.bosses-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.bosses-item {
+    background-color: #1c1c1c;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.bosses-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.bosses-item .title {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.bosses-item .description {
+    font-size: 1em;
+    color: #eaeaea;
+    text-align: justify;
+}
+
+.NPCs {
+    text-align: center;
+    color: #eaeaea;
+    margin-top: 3em;
+    width: 80%;
+}
+
+.NPCs h2 {
+    font-size: 3em;
+    color: #8761d3;
+}
+
+.NPCs p {
+    font-size: 1.2em;
+    color: #d1b57a;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.NPCs-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.NPCs-buttons a{
+    text-decoration: none;
+}
+
+.NPCs-btn {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    color: #eaeaea;
+    font-family: monospace;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.NPCs-btn:hover {
+    background-color: #333;
+}
+
+.all-NPCs-btn {
+    width: auto;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.all-NPCs-btn a {
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: #41575f;
+    color: #000;
+    font-size: 1.2em;
+    border-radius: 5px;
+    color:white;
+}
+
+.all-NPCs-btn:hover {
+    background-color: #1c92c2;
+}
+
+.image-section1 {
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment:fixed; 
+}
+
+.significance-me {
+    text-align: center;
+    margin-top: 2em;
+    width: 80%;
+}
+
+.significance-me h2 {
+    font-size: 3em;
+    color: #8761d3;
+    margin-bottom: 0.5em;
+}
+
+.significance-me p {
+    font-size: 1.2em;
+    color: #d1b57a;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1em;
+    background-color: #111;
+    text-align: center;
+    width: 100%;
+    color: #d1b57a;
+}
+
+.footer-nav {
+    margin-bottom: 1em;
+}
+
+.footer-nav a {
+    color: #d1b57a;
+    text-decoration: none;
+    margin: 0 1em;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.footer-nav a:hover {
+    color: #eaeaea;
+}
+
+.social-media {
+    margin-bottom: 1em;
+}
+
+.social-media a {
+    color: #8761d3;
+    font-size: 1em;
+    margin: 1 0.5em;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #eaeaea;
+}
+
+footer p {
+    font-family: monospace;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Navegación */
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Sección de Imágenes */
+    .image-section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas más pequeñas */
+
+    /* Navegación */
+    nav ul {
+        gap: 8px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px;
+    }
 }
