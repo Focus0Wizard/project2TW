@@ -91,14 +91,14 @@ nav ul li a {
 .image-section {
     width: 100%;
     height: 450px;
-    background-image: url('../img/history.jpg');
+    background-image: url('../img/bonfire.jpg');
     background-size: cover;
     background-position: top;
     background-attachment:fixed; 
 }
 
 .welcome p {
-    font-size: 1.8em;
+    font-size: 3em;
     color: #fff;
 }
 
@@ -106,14 +106,6 @@ nav ul li a {
     text-align: center;
     font-size: 4em;
     line-height: 1;
-}
-
-.scroll-down {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 2em;
-    color: #fff;
 }
 
 .image-section img {
@@ -145,28 +137,9 @@ nav ul li a {
     color: #e1db7d;
 }
 
-.historia-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0;
-}
-
-.historia-content .left {
-    width: 45%;
-    font-size: 1.5em;
-    text-align: left;
-    text-decoration: underline;
-}
-
-.historia-content .right {
-    width: 45%;
-    font-size: 1.2em;
-    color: #e1db7d;
-    text-align: right;
-}
-
 .read-more {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .read-more a {
@@ -179,156 +152,58 @@ nav ul li a {
     color:white;
 }
 
-.bosses {
-    width: 80%;
-    margin-top: 2.5em;
+.container {
+    text-align: left;
+    padding: 20px;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.container h1 {
     text-align: center;
-    color: #fff;
-}
-
-.bosses h2 {
     font-size: 3em;
-    color: #8761d3;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
-.bosses p {
-    margin-top: 0.5em;
-    font-size: 1.2em;
-    color: #e1db7d;
-    text-align: justify;
-}
-
-.bosses-items {
+.grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-    margin-top: 2em;
+    flex-direction:row;
+    gap: 20px;
 }
 
-.bosses-item {
-    background-color: #1c1c1c;
-    padding: 1em;
-    width: 250px;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 5px;
+.card {
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 1fr;
 }
 
-.bosses-item img {
-    width: 100%;
+.card-image {
+    width: 450px;
     height: auto;
+    margin: 10px auto;
     display: block;
-    margin-bottom: 1em;
 }
 
-.bosses-item .title {
+.icon {
     font-size: 1.5em;
-    color: #fff;
-    margin-bottom: 0.5em;
+    color: #9b80ff;
+    display: block;
 }
 
-.bosses-item .description {
-    font-size: 1em;
-    color: #eaeaea;
-    text-align: justify;
-}
-
-.NPCs {
-    text-align: center;
-    color: #eaeaea;
-    margin-top: 3em;
-    width: 80%;
-}
-
-.NPCs h2 {
-    font-size: 3em;
-    color: #8761d3;
-}
-
-.NPCs p {
+.card h2 {
     font-size: 1.2em;
-    color: #d1b57a;
-    margin-bottom: 2em;
-    text-align: justify;
+    margin: 10px 0;
+    color: #d3ad58;
 }
 
-.NPCs-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-}
-
-.NPCs-buttons a{
-    text-decoration: none;
-}
-
-.NPCs-btn {
-    background-color: #1c1c1c;
-    border: 1px solid #333;
-    color: #eaeaea;
-    font-family: monospace;
-    font-size: 2em;
-    padding: 1em;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.NPCs-btn:hover {
-    background-color: #333;
-}
-
-.all-NPCs-btn {
-    width: auto;
-    height: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    cursor: pointer;
-}
-
-.all-NPCs-btn a {
-    text-decoration: none;
-    padding: 1em 2em;
-    background-color: #41575f;
-    color: #000;
-    font-size: 1.2em;
-    border-radius: 5px;
-    color:white;
-}
-
-.all-NPCs-btn:hover {
-    background-color: #1c92c2;
-}
-
-.image-section1 {
-    width: 100%;
-    height: 450px;
-    background-image: url('../img/main.jpg');
-    background-size: cover;
-    background-position: top;
-    background-attachment:fixed; 
-}
-
-.significance-me {
-    text-align: center;
-    margin-top: 2em;
-    width: 80%;
-}
-
-.significance-me h2 {
-    font-size: 3em;
-    color: #8761d3;
-    margin-bottom: 0.5em;
-}
-
-.significance-me p {
-    font-size: 1.2em;
-    color: #d1b57a;
+.description {
+    color: #ffffff;
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: left;
     margin-bottom: 1em;
-    text-align: justify;
 }
 
 footer {
@@ -372,9 +247,7 @@ footer {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    /* Navegación */
     nav {
         flex-direction: column;
     }
@@ -384,13 +257,11 @@ footer {
         gap: 10px;
     }
 
-    /* Footer */
     .footer {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Sección de Imágenes */
     .image-section {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -398,14 +269,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Ajustes adicionales para pantallas más pequeñas */
-
-    /* Navegación */
     nav ul {
         gap: 8px;
     }
-
-    /* Footer */
     .footer {
         padding: 15px;
     }
