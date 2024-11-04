@@ -88,15 +88,6 @@ nav ul li a {
     color: #8761d3;
 }
 
-.image-section {
-    width: 100%;
-    height: 450px;
-    background-image: url('../img/history.jpg');
-    background-size: cover;
-    background-position: top;
-    background-attachment:fixed; 
-}
-
 .welcome p {
     font-size: 2.5em;
     color: #fff;
@@ -114,6 +105,15 @@ nav ul li a {
     margin-bottom: 1em;
     font-size: 2em;
     color: #fff;
+}
+
+.image-section {
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/history.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment:fixed; 
 }
 
 .image-section img {
@@ -212,7 +212,7 @@ nav ul li a {
     width: 250px;
     text-align: center;
     border: 1px solid #333;
-    border-radius: 5px;
+    border-radius: 11px;
 }
 
 .bosses-item img {
@@ -262,6 +262,7 @@ nav ul li a {
 
 .NPCs-buttons a{
     text-decoration: none;
+    color: #8761d3;
 }
 
 .NPCs-btn {
@@ -278,7 +279,7 @@ nav ul li a {
 }
 
 .NPCs-btn:hover {
-    background-color: #333;
+    background-color: #d1b57a;
 }
 
 .all-NPCs-btn {
@@ -371,10 +372,7 @@ footer {
     color: #eaeaea;
 }
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    /* Navegación */
     nav {
         flex-direction: column;
     }
@@ -383,14 +381,10 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-
-    /* Footer */
     .footer {
         flex-direction: column;
         text-align: center;
     }
-
-    /* Sección de Imágenes */
     .image-section {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -398,14 +392,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Ajustes adicionales para pantallas más pequeñas */
-
-    /* Navegación */
     nav ul {
         gap: 8px;
     }
-
-    /* Footer */
     .footer {
         padding: 15px;
     }
